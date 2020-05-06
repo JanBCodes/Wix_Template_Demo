@@ -1,0 +1,78 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #ffffff;
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    padding: 0 80px;
+    
+}
+
+/********************* Header */
+
+nav
+{
+    display: grid;
+    grid-template-columns: 5% 10% 1fr;
+    /*grid-template-columns: 275px 60px 1fr; */
+    
+}
+
+h1
+{
+    justify-self: center;
+    padding: 35px 0 0 0;
+   
+}
+li 
+{
+    display: inline-block; 
+    padding-top: 80px;
+    margin: 0 10px;   
+}
+
+li > a, i
+{
+    display: inline-block;
+    justify-self: center;
+    text-decoration: none;
+    
+}
+
+ul
+{
+    justify-self: end;
+    
+}
+
+section
+{
+    text-align: center;
+}
+img
+{
+    display: inline-block;
+    width: 50%;
+    
+}
+
+
+/* Footer */
+#footer
+{
+    background-color: #ffffcc;
+    margin: 0 -80px;    
+    text-align: center;
+}
+
+#footer p
+{
+    padding: 25px;
+}
