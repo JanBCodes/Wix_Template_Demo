@@ -1,0 +1,246 @@
+
+
+/******** MEDIA QUERIES ******
+The Bane of MY/CSS Existence */
+
+/*/ Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1024px)  /* Current Views */
+/* My extended screen is 1920px */
+/* My laptop screen is 1366px */
+{
+    #section_one > div > img
+    {
+    display: block;
+    object-fit: cover;
+    height: 600px;
+    
+    }
+
+    #section_one_div_one 
+{
+   
+    padding: 50px 0 0 50px;
+    
+}
+    
+    main
+    {
+    padding: 0px 300px
+
+    }
+
+    #section_two > div > img
+    {
+        max-width: 326px;
+    }
+    
+}
+
+
+/*// Large devices (desktops, 992px and up)*/
+/*
+@media (min-width: 992px) 
+{   
+
+    body
+    {
+        font-size: 1rem;
+    }
+    
+    nav img
+    {
+        display: block;
+        width: 100px;
+        padding-top: 20px;
+    }
+    nav
+    {
+        display: grid;
+        grid-template-columns: 100px 100px 1fr;
+    
+    }
+    h1
+    {
+        padding-top: 30px;
+        font-size: 18px;
+    }
+
+    li
+    {
+        padding-top: 50px;
+    }
+ 
+    #section_one > div > img
+    {
+        height: 832px;
+    }
+
+    #section_one_div_one 
+    {
+        padding: 25% 0 0 15%;
+
+    }
+
+
+    main
+    {
+    padding: 0px 200px
+
+    }
+
+    
+
+    #section_two > div > img
+    {
+        max-width: 246px;
+    }
+
+    #section_happy > div
+    {
+        grid-column-gap: 75px;
+        grid-row-gap: 50px;
+    }
+
+    #pic_one,  #pic_three
+    {
+        height: 450px;
+    }
+
+    #pic_two
+    {
+        height: 500px;
+    }
+
+    #pic_five
+    {
+        padding-top: 25px;
+        height: 400px;
+    }
+
+    #pic_four, #pic_six 
+    {
+        height: 400px;
+    }
+    
+    #last_section
+    {
+        font-size: 1rem;
+    }
+
+}
+
+*/
+/*/ Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) 
+{
+    body
+    {
+        font-size: 1rem;
+        padding: 0 50px;
+    }
+
+    nav img
+    {
+        display: block;
+        width: 100px;
+        padding-top: 20px;
+    }
+    nav
+    {
+        display: grid;
+        grid-template-columns: 100px 80px  2fr;
+    
+    }
+    h1
+    {
+        padding-top: 40px;
+        font-size: 12px;
+    }
+
+    li
+    {
+        padding-top: 50px;
+    }
+    
+    /**** *****/
+    #section_one_div_one 
+    {
+        padding: 50px 0 0 50px;
+        
+        
+    }
+
+    #section_one > h2, p, button
+    {
+        margin: 30px 0px;
+        
+    }
+
+    h2
+    {
+        font-size: 2rem;
+    }
+
+    /****** *******/
+
+    main
+    {
+        font-size: .8rem;
+        padding: 0px 100px
+        
+    }
+
+    main > div
+{
+    padding: 25px;
+}
+
+
+#section_testimonials > h3
+{
+    font-size: 3rem;
+    padding: 50px 0;
+}
+
+/****** *******/
+    #section_two > div > img
+    {
+        max-width: 260px;
+    }
+
+/****** *******/
+    #section_happy > div
+    {
+        grid-column-gap: 25px;
+        grid-row-gap: 25px;
+    }
+
+    #pic_one,  #pic_three
+    {
+        height: 400px;
+    }
+
+    #pic_two
+    {
+        height: 420px;
+    }
+
+    #pic_five
+    {
+        padding-top: 25px;
+        height: 400px;
+    }
+
+    #pic_four, #pic_six 
+    {
+        height: 400px;
+    }
+
+    #last_section
+   {
+    padding: 40px 0 40px 0;
+    text-align: center;
+    font-size: 1rem
+   }
+
+}

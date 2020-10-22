@@ -9,9 +9,9 @@ body
 {
     background-color: #ffffff;
     font-family: 'Merriweather', serif;
-    font-size: 1rem;
     font-weight: lighter;
     padding: 0 80px;
+    font-size: 1rem;
     
 }
 
@@ -20,21 +20,28 @@ body
 nav
 {
     display: grid;
-    grid-template-columns: 10% 10% 1fr;
-    /*grid-template-columns: 275px 60px 1fr; */
-    
+    grid-template-columns: 100px 80px  2fr;
+
+}
+nav > div > img
+{
+    display: block;
+    width: 100px;
+    padding-top: 20px;
 }
 
 h1
 {
     justify-self: center;
-    padding: 30px 0 0 0;
-   
+    padding: 35px 0 0 0;
+    padding-top: 40px;
+    font-size: 12px;   
 }
+
 li 
 {
     display: inline-block; 
-    padding-top: 80px;
+    padding-top: 50px;
     margin: 0 10px;   
 }
 
@@ -52,17 +59,77 @@ ul
     
 }
 
-img
+
+/* Main */
+main
 {
-    display: inline-block;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+    background-color: #E2F0D5;
+    justify-self: center;
+
 }
 
+main > div
+{
+    margin: 110px;
+    font-size: 1.2rem;
+}
+
+form > label
+{
+    display: inline-block;
+    margin-top: 8px;
+}
+
+form > input
+{
+    padding-left: 10px;
+    background-color: #E2F0D5;
+    width: 100%;
+    border: 1px solid #4A4A4A;
+    color: #98B37D;
+    line-height: 35px;
+    margin-top: 5px; 
+}
+form > input:hover
+{
+    border: black solid;
+}
+input:nth-last-child(3)
+{
+    line-height: 135px;
+}
+
+button
+{
+    color: white;
+    width: 100%;
+    line-height: 35px;
+    background-color: #4A4A4A;
+    margin-top: 10px;
+}
+button:hover
+{
+    opacity: 0.5;
+}
+
+main > section
+{
+    background-image: url(../img/laid\ back.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Footer */
 #footer
 {
-    background-color: #ffffcc;
-    margin: 0 -80px;    
+    background-color: #FDF9BA;
     text-align: center;
+    margin-top: 50px;
 }
 
 #footer p

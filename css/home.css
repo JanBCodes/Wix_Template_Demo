@@ -9,9 +9,9 @@ body
 {
     background-color: #ffffff;
     font-family: 'Merriweather', serif;
-    font-size: 1.5rem;
     font-weight: lighter;
     padding: 0 80px;
+    font-size: 1rem;
     
 }
 
@@ -20,21 +20,28 @@ body
 nav
 {
     display: grid;
-    grid-template-columns: 5% 10% 1fr;
-    /*grid-template-columns: 275px 60px 1fr; */
-    
+    grid-template-columns: 100px 80px  2fr;
+
+}
+nav > div > img
+{
+    display: block;
+    width: 100px;
+    padding-top: 20px;
 }
 
 h1
 {
     justify-self: center;
     padding: 35px 0 0 0;
-   
+    padding-top: 40px;
+    font-size: 12px;   
 }
+
 li 
 {
     display: inline-block; 
-    padding-top: 80px;
+    padding-top: 50px;
     margin: 0 10px;   
 }
 
@@ -59,21 +66,16 @@ ul
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    text-align: center;    
+    background-color: #FDFCBB;
+  
 }
 
 #section_one_div_one 
 {
-    text-align: left;
-    padding: 25% 0 0 150px;
     background-color: #FDFCBB;
-    
-}
+    text-align: left;
+    margin: auto;
 
-#section_one > h2, p, button
-{
-    margin: 45px 0px;
-    
 }
 
 #section_one > div > img
@@ -81,7 +83,6 @@ ul
     display: block;
     object-fit: cover;
     width: 100%;
-       
 }
 
 h2
@@ -100,13 +101,16 @@ h2
 /********************* Main */
 main
 {
+    display: grid;
+    grid-template-columns: .5fr 2fr .5fr;
     text-align: center;
-    padding: 0px 600px
-    
 }
+
 main > div
 {
     padding: 50px;
+    grid-column-start: 2;
+    width: 100%;
 }
 
 main > div > button
@@ -114,6 +118,7 @@ main > div > button
     background-color: #ffffff;
     color: #000;
     padding: 15px 20px;
+    margin-top: 25px;
 }
 
 main > div > h3
@@ -121,7 +126,6 @@ main > div > h3
     padding-top: 30px;
     font-size: 3rem;
 }
-
 
 /*********** Section Two */
 
@@ -156,14 +160,18 @@ main > div > h3
     color: #FFF;
     padding: 15px 20px;
     background-color: #1E1E0C;
-        
+    margin-top: 50px;   
+}
+
+#section_two > button:hover
+{
+    opacity: 0.5;
 }
 
 #section_two h4
 {
     background-color: #99ddff;
     padding: 25px;
-    
 }
 
 /****** Happy Clients ******/
@@ -211,13 +219,13 @@ main > div > h3
     height: 700px;
 }
 
-
 /****** Testimonials ***/
 
 #section_testimonials > h3
 {
+    padding: 50px 0;
+    font-size: 3rem;
     text-align: center;
-    padding: 80px 0;
 }
 
 #section_testimonials > div
@@ -235,7 +243,6 @@ main > div > h3
     
 }
 
-
 /******* Last Section ******/
 #last_section
 {
@@ -247,290 +254,25 @@ main > div > h3
 #email
 {
     font-size: 2rem;
-    border-radius: 0px;
-    border-bottom: 5px;
+    border: none;
+    border-bottom: solid 1px black;
+}
+#email:hover
+{
+    border-bottom: solid 2px red;
 }
 /********* Footer ********/
 
+/* Footer */
 #footer
 {
-    background-color: #ffffcc;
-    margin: 0 -80px;    
+    background-color: #FDF9BA;
     text-align: center;
+    margin-top: 50px;
 }
 
 #footer p
 {
     padding: 25px;
-}
-
-
-
-/******** MEDIA QUERIES ******
-The Bane of MY HTML/CSS Existence */
-
-/*/ Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1024px)  /* Current Views */
-/* My extended screen is 1920px */
-/* My laptop screen is 1366px */
-{
-    #section_one > div > img
-    {
-    display: block;
-    object-fit: cover;
-    height: 600px;
-    
-    }
-
-    #section_one_div_one 
-{
-   
-    padding: 50px 0 0 50px;
-    
-}
-    
-    main
-    {
-    padding: 0px 300px
-
-    }
-
-    #section_two > div > img
-    {
-        max-width: 326px;
-    }
-    
-}
-
-
-/*// Large devices (desktops, 992px and up)*/
-/*
-@media (min-width: 992px) 
-{   
-
-    body
-    {
-        font-size: 1rem;
-    }
-    
-    nav img
-    {
-        display: block;
-        width: 100px;
-        padding-top: 20px;
-    }
-    nav
-    {
-        display: grid;
-        grid-template-columns: 100px 100px 1fr;
-    
-    }
-    h1
-    {
-        padding-top: 30px;
-        font-size: 18px;
-    }
-
-    li
-    {
-        padding-top: 50px;
-    }
- 
-    #section_one > div > img
-    {
-        height: 832px;
-    }
-
-    #section_one_div_one 
-    {
-        padding: 25% 0 0 15%;
-
-    }
-
-
-    main
-    {
-    padding: 0px 200px
-
-    }
-
-    
-
-    #section_two > div > img
-    {
-        max-width: 246px;
-    }
-
-    #section_happy > div
-    {
-        grid-column-gap: 75px;
-        grid-row-gap: 50px;
-    }
-
-    #pic_one,  #pic_three
-    {
-        height: 450px;
-    }
-
-    #pic_two
-    {
-        height: 500px;
-    }
-
-    #pic_five
-    {
-        padding-top: 25px;
-        height: 400px;
-    }
-
-    #pic_four, #pic_six 
-    {
-        height: 400px;
-    }
-    
-    #last_section
-    {
-        font-size: 1rem;
-    }
-
-}
-
-*/
-/*/ Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) 
-{
-    body
-    {
-        font-size: 1rem;
-        padding: 0 50px;
-    }
-
-    nav img
-    {
-        display: block;
-        width: 100px;
-        padding-top: 20px;
-    }
-    nav
-    {
-        display: grid;
-        grid-template-columns: 100px 80px  2fr;
-    
-    }
-    h1
-    {
-        padding-top: 40px;
-        font-size: 12px;
-    }
-
-    li
-    {
-        padding-top: 50px;
-    }
-    
-    /**** *****/
-    #section_one_div_one 
-    {
-        padding: 50px 0 0 50px;
-        
-        
-    }
-
-    #section_one > h2, p, button
-    {
-        margin: 30px 0px;
-        
-    }
-
-    h2
-    {
-        font-size: 2rem;
-    }
-
-    /****** *******/
-
-    main
-    {
-        font-size: .8rem;
-        padding: 0px 100px
-        
-    }
-
-    main > div
-{
-    padding: 25px;
-}
-
-
-#section_testimonials > h3
-{
-    font-size: 3rem;
-    padding: 50px 0;
-}
-
-/****** *******/
-    #section_two > div > img
-    {
-        max-width: 260px;
-    }
-
-/****** *******/
-    #section_happy > div
-    {
-        grid-column-gap: 25px;
-        grid-row-gap: 25px;
-    }
-
-    #pic_one,  #pic_three
-    {
-        height: 400px;
-    }
-
-    #pic_two
-    {
-        height: 420px;
-    }
-
-    #pic_five
-    {
-        padding-top: 25px;
-        height: 400px;
-    }
-
-    #pic_four, #pic_six 
-    {
-        height: 400px;
-    }
-
-    #last_section
-   {
-    padding: 40px 0 40px 0;
-    text-align: center;
-    font-size: 1rem
-   }
-
-}
-
-
-/*/ Small devices (landscape phones, 576px and up)  */
-@media (max-width: 767.99px) { 
-
-body
-{
-    grid-template-rows: max-content;
-}
-
-
-
-
-
-
-    
-    
-    
-
-
-
-
 }
 
