@@ -12,7 +12,8 @@ body
     font-weight: lighter;
     padding: 0 80px;
     font-size: 1rem;
-    
+    max-width: 1440px;
+    margin: 0 auto;   
 }
 
 /********************* Header */
@@ -23,6 +24,7 @@ nav
     grid-template-columns: 100px 80px  2fr;
 
 }
+
 nav > div > img
 {
     display: block;
@@ -45,12 +47,17 @@ li
     margin: 0 10px;   
 }
 
+a:hover, i:hover
+{
+    color: red;
+}
+
 li > a, i
 {
     display: inline-block;
     justify-self: center;
     text-decoration: none;
-    
+    color: black;
 }
 
 ul
@@ -94,10 +101,12 @@ form > input
     line-height: 35px;
     margin-top: 5px; 
 }
+
 form > input:hover
 {
-    border: black solid;
+    background-color: #FDF9BA;
 }
+
 input:nth-last-child(3)
 {
     line-height: 135px;
@@ -105,15 +114,17 @@ input:nth-last-child(3)
 
 button
 {
-    color: white;
-    width: 100%;
-    line-height: 35px;
     background-color: #4A4A4A;
+    color: white;
+    width: 200px;
+    line-height: 35px;
     margin-top: 10px;
 }
+
 button:hover
 {
-    opacity: 0.5;
+    background-color: #FDF9BA;
+    color: black;
 }
 
 main > section
@@ -132,7 +143,36 @@ main > section
     margin-top: 50px;
 }
 
-#footer p
+#footer > p
 {
     padding: 25px;
+}
+
+/* --------------------------- Media Queries ---------------------------  */
+
+/* --------------------------- Media Queries ---------------------------  */
+
+@media (max-width: 420px) {
+
+
+}
+
+@media (min-width: 421.01px) and (max-width: 768.99px) {
+
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+
+
+}
+
+@media (min-width: 1441px) {
+
+
 }

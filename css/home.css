@@ -7,12 +7,13 @@
 
 body
 {
-    background-color: #ffffff;
+    background-color: whitesmoke;
     font-family: 'Merriweather', serif;
     font-weight: lighter;
     padding: 0 80px;
     font-size: 1rem;
-    
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 /********************* Header */
@@ -20,9 +21,11 @@ body
 nav
 {
     display: grid;
-    grid-template-columns: 100px 80px  2fr;
+    grid-template-columns: 100px 80px 2fr;
+    color: black;
 
 }
+
 nav > div > img
 {
     display: block;
@@ -45,12 +48,18 @@ li
     margin: 0 10px;   
 }
 
+
+a:hover, i:hover
+{
+    color: red;
+}
+
 li > a, i
 {
     display: inline-block;
     justify-self: center;
     text-decoration: none;
-    
+    color: black;
 }
 
 ul
@@ -58,7 +67,6 @@ ul
     justify-self: end;
     
 }
-
 
 /***************** Section one    . = class // # = id */
  
@@ -123,8 +131,9 @@ main > div > button
 
 main > div > h3
 {
-    padding-top: 30px;
-    font-size: 3rem;
+    padding: 25px 0;
+    font-size: 2.5rem;
+    
 }
 
 /*********** Section Two */
@@ -134,10 +143,10 @@ main > div > h3
     text-align: center;
 }
 
-#section_two h3
+#section_two > h3
 {
-    padding: 50px 0;
-    font-size: 3rem;
+    padding: 25px 0;
+    font-size: 2.5rem;
     text-align: center;
 
 }
@@ -177,8 +186,8 @@ main > div > h3
 /****** Happy Clients ******/
 #section_happy > h3
 {
-    padding: 50px 0;
-    font-size: 3rem;
+    padding: 25px 0;
+    font-size: 2.5rem;
     text-align: center;
 }
 
@@ -223,8 +232,8 @@ main > div > h3
 
 #section_testimonials > h3
 {
-    padding: 50px 0;
-    font-size: 3rem;
+    padding: 25px 0;
+    font-size: 2.5rem;
     text-align: center;
 }
 
@@ -248,15 +257,25 @@ main > div > h3
 {
     padding: 80px 0 80px 0;
     text-align: center;
-    font-size: 2rem
+    font-size: 1.25rem
 }
 
 #email
 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     border: none;
     border-bottom: solid 1px black;
+    width: 500px;
+    height: 50px;
+    background-color: whitesmoke;
 }
+
+form > button
+{
+    height: 50px;
+
+}
+
 #email:hover
 {
     border-bottom: solid 2px red;
@@ -271,8 +290,39 @@ main > div > h3
     margin-top: 50px;
 }
 
-#footer p
+#footer > p
 {
     padding: 25px;
 }
 
+
+
+
+/* --------------------------- Media Queries ---------------------------  */
+
+/* --------------------------- Media Queries ---------------------------  */
+
+@media (max-width: 420px) {
+
+
+}
+
+@media (min-width: 421.01px) and (max-width: 768.99px) {
+
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+
+
+}
+
+@media (min-width: 1441px) {
+
+
+}

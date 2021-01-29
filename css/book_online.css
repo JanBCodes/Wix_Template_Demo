@@ -12,6 +12,8 @@ body
     font-weight: lighter;
     padding: 0 80px;
     font-size: 1rem;
+    max-width: 1440px;
+    margin: 0 auto;
     
 }
 
@@ -45,12 +47,17 @@ li
     margin: 0 10px;   
 }
 
+a:hover, i:hover
+{
+    color: red;
+}
+
 li > a, i
 {
     display: inline-block;
     justify-self: center;
     text-decoration: none;
-    
+    color: black;
 }
 
 ul
@@ -109,4 +116,33 @@ main > div
 #footer p
 {
     padding: 25px;
+}
+
+/* --------------------------- Media Queries ---------------------------  */
+
+/* --------------------------- Media Queries ---------------------------  */
+
+@media (max-width: 420px) {
+
+
+}
+
+@media (min-width: 421.01px) and (max-width: 768.99px) {
+
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+
+
+}
+
+@media (min-width: 1441px) {
+
+
 }
