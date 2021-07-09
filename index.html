@@ -2,13 +2,13 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="/Wix_Template_Demo/css/home.css"> 
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:300&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/fc385cc442.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./css/style.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">        <script src="https://kit.fontawesome.com/fc385cc442.js" crossorigin="anonymous"></script>
         <title> 
-            Wix Demo - Home Organizer
+            Home : Home Organizer || Wix Demo
         </title>
-
     </head>
 
     <body> <!-- Header -->
@@ -17,22 +17,23 @@
             <nav>
                 <div> 
                     <img src="img/logo.jpg">
+                    <h1>
+                        Julia Clark <br> Home Organizer
+                    </h1>
                 </div>
-                <h1>
-                    Julia Clark <br> Home Organizer
-                </h1>
+ 
                 <ul>
                     <li>
                         <a href="index.html"> Home</a>
                     </li>
                     <li>
-                        <a href="html/book_online.html"> Book Online</a>
+                        <a href="./html/book_online.html"> Book Online</a>
                     </li>
                     <li>
-                        <a href="">Tips</a>
+                        <a href="./html/tips.html">Tips</a>
                     </li>
                     <li>
-                        <a href="html/contact.html"> Contact</a>
+                        <a href="./html/contact.html"> Contact</a>
                     </li>
                     <li>
                         <a href="https://www.facebook.com/" target="_blank"> <i class="fab fa-facebook-f"></i> </a>
@@ -60,11 +61,13 @@
                 </button>
             </div>
             <div>
-                <img src="img/profile pic wix.jpg" alt="Julia smiling">
+                <!-- <img src="img/profile pic wix.jpg" alt="Julia smiling"> -->
+                <img src="https://static.wixstatic.com/media/86cb94_5dffd3c7abdd444b938a89c0753694b4~mv2_d_4009_3581_s_4_2.jpg/v1/fill/w_857,h_881,al_b,q_85,usm_0.66_1.00_0.01/86cb94_5dffd3c7abdd444b938a89c0753694b4~mv2_d_4009_3581_s_4_2.webp
+                " alt="Julia smiling">
             </div>
         </section>
        
-        <main>
+        <main id="main">
             <div>
                 <h3> 
                     Let's Meet
@@ -143,24 +146,25 @@
         </section>
 
         <section id="last_section">
-            <p>
+            <p id="p1">
                 For more life changing tips for your space
             </p>
-            <p>
-                Subscribe
-            </p>
-            <form>
+            <form id="homeForm">
+                <label for="email">                Subscribe
+                </label>
                 <input type="email" id="email" placeholder="Enter you email here">
-                <button class="black_button"> 
+                <button id="black_button" type="submit"> 
                     Submit
                 </button>
             </form>
         </section>
-        <hr>
+
         <footer id="footer">
+            <hr>
             <p>
                 Wix Website Demo-ed by: JanBCodes
             </p>
+            <hr>
         </footer>
     </body>
 </html>

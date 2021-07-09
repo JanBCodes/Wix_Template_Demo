@@ -1,0 +1,499 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: whitesmoke;
+    font-family: 'Playfair Display', serif;    
+    max-width: 1440px;
+    margin: auto auto;
+    padding: 0 80px;
+    font-size: 1rem;
+}
+
+/* *************** Header : Nav Bar *************** */
+nav
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: black;
+    padding: 10px 0;
+}
+
+nav > div
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    align-items: center;
+}
+
+nav > div > img
+{
+    display: inline-block;
+    width: 75%;
+}
+
+nav > div > h1
+{
+    font-size: 1.5rem;   
+    text-align: left;
+}
+
+ul
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr .5fr .5fr .5fr;
+    justify-self: end;
+    align-items: center;
+}
+
+li 
+{
+    display: inline-block; 
+    margin: 0 10px;   
+    font-size: 1.5rem;   
+    text-align: center;
+}
+
+a:hover, i:hover
+{
+    color: red;
+}
+
+li > a, i
+{
+    display: inline-block;
+    justify-self: center;
+    text-decoration: none;
+    color: black;
+}
+
+/* *************** Footer *************** */
+#footer
+{
+    background-color: #FDF9BA;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#footer p
+{
+    padding: 25px;
+}
+
+/* *************** Home : Hero *************** */
+ 
+#section_one 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #FDFCBB;
+}
+
+#section_one_div_one 
+{
+    background-color: #FDFCBB;
+    text-align: left;
+    margin: auto auto;
+}
+
+#section_one_div_one > p
+{
+    font-size: 1.5rem;
+}
+
+#section_one > div > img
+{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: auto auto;
+}
+
+#section_one_div_one > h2
+{
+    font-size: 4rem;
+}
+
+.black_button
+{
+    background-color: #1E1E0C;
+    color: #FFF;
+    padding: 15px 20px;
+    text-align: center
+}
+
+/* *************** Home : Let's Meet *************** */
+#main
+{
+    display: grid;
+    grid-template-columns: .5fr 2fr .5fr;
+    text-align: center;
+}
+
+#main > div
+{
+    padding: 50px;
+    grid-column-start: 2;
+    width: 100%;
+}
+
+#main > div > button
+{
+    background-color: #ffffff;
+    color: #000;
+    padding: 15px 20px;
+    margin-top: 25px;
+}
+
+#main > div > h3
+{
+    padding: 25px 0;
+    font-size: 2.5rem;    
+}
+
+/* *************** Home : My Services *************** */
+#section_two
+{   
+    text-align: center;
+}
+
+#section_two > h3
+{
+    padding: 25px 0;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#section_two > div 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 40px;
+}
+
+#section_two > div > img
+{
+    width: 100%;
+    height: 100%;
+}
+
+#section_two > button
+{
+    color: #FFF;
+    padding: 15px 20px;
+    background-color: #1E1E0C;
+    margin: 50px 0;   
+}
+
+#section_two > button:hover
+{
+    opacity: 0.5;
+}
+
+#section_two h4
+{
+    background-color: #99ddff;
+    padding: 25px;
+}
+
+/* *************** Home : Happy Clients *************** */
+#section_happy > h3
+{
+    padding: 25px 0;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#section_happy > div
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+}
+
+#section_happy > div > img
+{
+    display: inline-block;
+    width: 100%;
+    object-fit: cover;
+}
+
+#pic_one, #pic_three, #pic_four, #pic_six 
+{
+    height: 100%;
+}
+
+#pic_two
+{
+    height: 110%;
+}
+
+#pic_five
+{   margin-top: auto;
+    height: 90%;
+}
+
+/* *************** Home : Testimonials *************** */
+
+#section_testimonials > h3
+{
+    padding: 25px 0;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#section_testimonials > div
+{
+    display: grid;
+    grid-column-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#section_testimonials > div > div
+{
+    padding: 80px;
+    background-color: #e6ffe6    
+}
+
+/* *************** Home : Subscribe *************** */
+#last_section
+{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 20px;
+    padding: 80px 0;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+#p1
+{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#homeForm
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#homeForm > label
+{
+    text-align:end;
+    padding: 0 20px 0 0;
+}
+
+#black_button
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #1E1E0C;
+    color: #FFF;
+    align-items: center;
+    margin: 0 60% 0 5% ;
+}
+
+#email
+{
+    font-size: 1.5rem;
+    border: none;
+    border-bottom: solid 1px black;
+    width: 500px;
+    height: 50px;
+    background-color: whitesmoke;
+}
+
+#email:hover
+{
+    border-bottom: solid 1px red;
+}
+
+
+/* *************** Book Online : My Services Banner *************** */
+#my_services
+{
+    background-color: #89C4F2;
+    padding: 80px 0px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#my_services > h2
+{
+    font-size: 2.5rem;
+}
+
+/* *************** Book Online : Main *************** */
+#six_grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+}
+
+#six_grid > .items
+{
+    border: solid 2px #4A4A4A;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.bookItButton
+{
+    background-color: #89C4F2;
+    padding: 10px 30px;
+    color: white;
+}
+
+/* *************** ContactMe : Main *************** */
+#contactCard
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+    background-color: #E2F0D5;
+    justify-self: center;
+}
+
+#contactCard > div
+{
+    margin: 80px 50px;
+    font-size: 1.2rem;
+}
+
+#contactUsForm > label
+{
+    display: inline-block;
+    margin-top: 8px;
+
+}
+
+#contactUsForm > input
+{
+    display: block;
+    background-color: #E2F0D5;
+    padding-left: 10px;
+    border: 1px solid #4A4A4A;
+    color: #98B37D;
+    width: 100%;
+    margin-top: 5px; 
+    line-height: 35px;
+}
+
+#contactUsForm > input:hover
+{
+    background-color: #FDF9BA;
+}
+
+#contactUsForm > input:nth-last-child(3)
+{
+    line-height: 130px;
+}
+
+#contactUsForm > button
+{
+    background-color: #4A4A4A;
+    color: white;
+    width: 200px;
+    line-height: 35px;
+    margin-top: 10px;
+}
+
+#contactUsForm > button:hover
+{
+    background-color: #FDF9BA;
+    color: black;
+}
+
+#contactCard > section
+{
+    background-image: url(../img/laid\ back.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* *************** Tips : Header *************** */
+#organizingTips
+{
+    background-color: #FDFCBB;;
+    padding: 80px 0px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#organizingTips > h2
+{
+    font-size: 2.5rem;
+
+}
+
+/* *************** Tips : Main *************** */
+
+#organizeYourSpace
+{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 90vh;
+}
+
+#organizeYourSpace > div
+{
+    background-image: url(../img/tips\ Image\ 1.jpg);
+    background-size: cover;
+}
+
+#organizeYourSpace > div:nth-last-child(1)
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#organizeYourSpace > div:nth-last-child(1) > div
+{
+    background-image: url(../img/tips\ Image\ 2.jpg);
+    background-size: cover;
+}
+
+
+#organizeYourSpace > div:nth-last-child(1) > div:nth-last-child(1)
+{
+    background-image: url(../img/tips\ Image\ 3.jpg);
+    background-size: cover;
+}
+
+/* --------------------------- Media Queries ---------------------------  */
+
+@media (max-width: 420px) {
+
+
+}
+
+@media (min-width: 421.01px) and (max-width: 768.99px) {
+
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+
+
+}
+
+@media (min-width: 1441px) {
+
+
+}
