@@ -7,7 +7,7 @@
 
 body
 {
-    background-color: whitesmoke;
+    /* background-color: yellow; */
     font-family: 'Playfair Display', serif;    
     max-width: 1440px;
     margin: auto auto;
@@ -59,6 +59,11 @@ li
     text-align: center;
 }
 
+.hide
+{
+    display: none;
+}
+
 a:hover, i:hover
 {
     color: red;
@@ -86,8 +91,7 @@ li > a, i
 }
 
 /* *************** Home : Hero *************** */
- 
-#section_one 
+ #section_one 
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -153,7 +157,7 @@ li > a, i
 #main > div > h3
 {
     padding: 25px 0;
-    font-size: 2.5rem;    
+    font-size: 2.5rem;
 }
 
 /* *************** Home : My Services *************** */
@@ -240,7 +244,6 @@ li > a, i
 }
 
 /* *************** Home : Testimonials *************** */
-
 #section_testimonials > h3
 {
     padding: 25px 0;
@@ -251,8 +254,8 @@ li > a, i
 #section_testimonials > div
 {
     display: grid;
-    grid-column-gap: 40px;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 40px;
 }
 
 #section_testimonials > div > div
@@ -315,7 +318,6 @@ li > a, i
     border-bottom: solid 1px red;
 }
 
-
 /* *************** Book Online : My Services Banner *************** */
 #my_services
 {
@@ -374,7 +376,6 @@ li > a, i
 {
     display: inline-block;
     margin-top: 8px;
-
 }
 
 #contactUsForm > input
@@ -434,11 +435,9 @@ li > a, i
 #organizingTips > h2
 {
     font-size: 2.5rem;
-
 }
 
 /* *************** Tips : Main *************** */
-
 #organizeYourSpace
 {
     display: grid;
@@ -473,7 +472,7 @@ li > a, i
 
 /* --------------------------- Media Queries ---------------------------  */
 
-@media (max-width: 420px) {
+/* @media (max-width: 420px) {
 
 
 }
@@ -488,7 +487,7 @@ li > a, i
 
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1440px) {  
 
 
 }
@@ -496,4 +495,4 @@ li > a, i
 @media (min-width: 1441px) {
 
 
-}
+} */
